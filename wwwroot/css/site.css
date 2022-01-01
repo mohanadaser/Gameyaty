@@ -1,0 +1,182 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+
+*{
+padding:0;
+margin:0;
+
+}
+body {
+    height: 1500px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color:#ffffff;
+   
+   
+   
+}
+/*upper bar*/
+.upper-bar{
+   padding:0px;
+  background-image:url(../img/خلفية.jpg);
+ position:relative;
+    height:100px;
+   
+}
+
+.upper-bar .container-fluid{
+
+    margin-top:20px;
+}
+ .upper-bar .container-fluid ul li{
+     padding:5px;
+     display:inline-block;
+ }
+/*start navbar*/
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+.navbar-brand span:first-child {
+    font-size: 40px;
+    color: #0026ff;
+}
+
+.navbar-brand span:last-child {
+    font-size: 25px;
+    color: #ff0000;
+}
+
+
+.navbar-brand > span {
+    font-weight: bold;
+       text-transform:uppercase;
+}
+.navbar-nav .nav-item{
+
+    padding:5px;
+}
+/*end navbar*/
+/*اخبار الجمعيه*/
+.ticker {
+    display:flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60px;
+    margin: 0 auto;
+   
+}
+
+.news {
+    width: 76%;
+    background: #cc4444;
+    padding: 0 2%;
+    
+}
+
+.title {
+    width: 20%;
+    text-align: center;
+    background: #0026ff;
+    
+}
+
+   /* .title:after {
+        position: absolute;
+        content: "";
+        left: -16%;
+        border-left: 20px solid #c81c1c;
+        border-top: 33px solid transparent;
+        border-right: 20px solid transparent;
+        border-bottom: 33px solid transparent;
+        top: 0;
+    }*/
+
+    .title h5 {
+        font-size: 20px;
+        margin: 8% 0;
+        color: #fff;
+        font-weight:bold;
+    }
+
+.news marquee {
+    font-size: 18px;
+    color: #fff;
+   
+}
+   
+    /*نهاية اخبار الجمعيه*/
+    /*start slider*/
+    /*end slider*/
+    /*features*/
+    .features {
+        padding: 50px;
+    }
+.features h2{
+    margin-bottom:20px;
+    color:#000000;
+    text-align:right;
+    font-size:40px;
+}
+
+/*endfeatures*/
+
+/*owl-wrapper*/
+.mycarousel-two .owl-carousel {
+    margin-bottom:50px;
+}
+.mycarousel h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+.mycarousel-two .item {
+    margin-left:5px;
+    width:150px;
+    height:150px;
+}
+.mycarousel-two h2 {
+    text-align: center;
+   /* margin-bottom: 50px;*/
+    margin-top: 30px;
+    font-size: 40px;
+}
+/* end owl-wrapper*/
+
+/*start footer*/
+.footer {
+    border-top: 1px solid darkgray;
+    padding: 20px;
+   /*height:50px;*/
+  
+}
+/*model body*/
+.modal-body .col-md-4 img {
+display:inline-block;
+
+}
+.modal-body .col-md-4 .text-center {
+   padding:10px;
+}
+/* end model body*/
+.footer span {
+    color: #0026ff;
+}
+
+ .footer ul {
+        margin: 0px;
+    }
+
+ .footer ul li {
+     display: inline-block;
+        }
+
+ .footer ul li a {
+     margin-left: 20px;
+     color: #0026ff;
+     display: inline-block;
+    }
+
+/*End footer*/

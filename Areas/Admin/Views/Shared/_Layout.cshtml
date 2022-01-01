@@ -1,0 +1,488 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Gameyaty</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/font/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/css/owl.theme.default.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-------bar header-->
+    <div class="upper-bar">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-left">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+
+                    </ul>
+                    <div class="container">
+                        <button class="btn btn-info" asp-action="" asp-controller="" style="width:100px;">تطوع</button>
+                        <button class="btn btn-danger" asp-action="" asp-controller="" style="width:100px;">عضويه</button>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                            التبرعات
+                        </button>
+                        <button class="btn btn-primary" asp-action="" asp-controller="" style="width:100px;">توظيف</button>
+                    </div>
+                </div>
+
+                <div class="col-text-right">
+
+                  
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-------end-barheader-->
+    <!-------navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                @*<span>e</span> <span>fa</span>*@
+             
+            </a>
+            @*<h4 class="text-white-50" style="font-style:italic;color:#00ffff;">جمعية مصر للمستقبل</h4>*@
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fa fa-phone fa-fw"></i>اتصل بنا</a>
+                    </li>
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cogs fa-fw"></i>الأنشطه</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fa fa-star-half-full"></i>الموردين</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-info-circle fa-fw"></i>من نحن</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:gold;"><i class="fa fa-home fa-fw"></i>الرئيسيه</a>
+                    </li>
+                   
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item text-white-50">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa fa-sign-in fa-fw"></i>تسجيل دخول</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!------- end navbar-->
+    <!------- اخبار الجمعيه-->
+    <div class="container">
+        <div class="ticker">
+            <div class="title"><h5>أخبار الجمعيه</h5></div>
+            <div class="news">
+                <marquee>
+                    <p>
+                        اليوم تم افتتاح مشروع كفالة اسره محتاجه فى جميع قرى مصر 
+                    </p>
+                </marquee>
+            </div>
+        </div>
+    </div>
+    <!------- slider show-->
+    <div class="container mt-3">
+
+        <div id="myCarousel" class="carousel slide">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+                <li class="item1 active"></li>
+                <li class="item2"></li>
+                <li class="item3"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/img/covers/1.jpeg" alt="" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/covers/2.jpeg" alt="" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/covers/3.jpeg" alt="" width="1100" height="500">
+                </div>
+                <div class="carousel-item">
+                    <img src="/img/covers/4.jpeg" alt="" width="1100" height="500">
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#myCarousel">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <!------- end slider-->
+    <!------- مجالات عمل الجمعيه-->
+
+    <div class="features text-center">
+        <div class="container">
+            <h2>مجالات عمل الجمعيه</h2>
+            <div class="row">
+                <div class="col-md">
+                    <img src="~/img/activites/1.png" alt="" class="img-fluid" width="200" height="200" />
+
+
+                </div>
+                <div class="col-md">
+                    <img src="~/img/activites/2.png" alt="" class="img-fluid" width="200" height="200" />
+
+
+                </div>
+                <div class="col-md">
+                    <img src="~/img/activites/3.png" alt="" class="img-fluid" width="200" height="200" />
+
+
+                </div>
+                <div class="col-md">
+
+                    <img src="~/img/activites/4.png" alt="" class="img-fluid" width="200" height="200" />
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <img src="~/img/activites/5.png" alt="" class="img-fluid" width="200" height="200" />
+
+
+                </div>
+                <div class="col-md">
+                    <img src="~/img/activites/6.png" alt="" class="img-fluid" width="200" height="200" />
+
+
+                </div>
+                <div class="col-md">
+                    <img src="~/img/activites/7.png" alt="" class="img-fluid" width="200" height="200" />
+
+
+                </div>
+                <div class="col-md">
+
+                    <img src="~/img/activites/8.png" alt="" class="img-fluid" width="200" height="200" />
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------- صور الجمعيه-->
+    <div class="mycarousel">
+        <div class="container">
+            <h2>معرض الصور</h2>
+            <div class="row">
+
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="~/img/images.jpg" /></div>
+                    <div class="item"><img src="~/img/images.jpg" /></div>
+                    <div class="item"><img src="~/img/images.jpg" /></div>
+                    <div class="item"><img src="~/img/images.jpg" /></div>
+                    <div class="item"><img src="~/img/images.jpg" /></div>
+                    <div class="item"><img src="~/img/gawy barmaga.png" /></div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!------- مبادرات الجمعيه-->
+
+    <div class="mycarousel-two">
+        <div class="container">
+            <h2>مبادراتنا</h2>
+            <div class="row">
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="~/img/mobadrat/10.webp" /></div>
+                    <div class="item"><img src="~/img/mobadrat/11.webp" /></div>
+                    <div class="item"><img src="~/img/mobadrat/12.webp" /></div>
+                    <div class="item"><img src="~/img/mobadrat/2-1.webp" /></div>
+                    <div class="item"><img src="~/img/mobadrat/3.webp" /></div>
+                    <div class="item"><img src="~/img/mobadrat/8.webp" /></div>
+                    <div class="item"><img src="~/img/mobadrat/13.png" /></div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!------- طرق الدفع والتبرعات-->
+    <div class="container">
+
+        <!-- Button to Open the Modal -->
+        <!-- The Modal -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">طرق التبرعات وطرق الدفع المختلفه</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h4>طرق التبرعات</h4>
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <div class="text-center">
+
+                                    <img src="~/img/Donation/blood.png" alt="" class="img-fluid" width="100" height="100" />
+                                    <h4>التبرع بالدم</h4>
+                                </div>
+                                <div class="text-center">
+                                    <img src="~/img/Donation/sadaka.jpg" alt="" class="img-fluid" width="100" height="100" />
+                                    <h4>صدقه جاريه</h4>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+
+                                <div class="text-center">
+                                    <img src="~/img/Donation/zakat.jpg" alt="" class="img-fluid" width="100" height="100" />
+                                    <h4>ذكاة مال</h4>
+                                </div>
+                                <div class="text-center">
+                                    <img src="~/img/Donation/companies.jpg" alt="" class="img-fluid" width="100" height="100" />
+                                    <h4>شركات</h4>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <img src="~/img/Donation/yatm.png" alt="" class="img-fluid" width="100" height="150" />
+                                    <h4>كفالة يتيم</h4>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <hr />
+                        <h4>طرق الدفع</h4>
+                        <img src="~/img/Donation/bank.png" alt="" class="img-fluid" width="100" height="100" />
+
+                        <img src="~/img/Donation/post.jpg" alt="" class="img-fluid" width="100" height="100" />
+                        <img src="~/img/Donation/vodafone-cash-550x550w.png" alt="" class="img-fluid" width="100" height="100" />
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-------  نهاية طرق الدفع والتبرعات -->
+    <!--------------خريطة جوجل---------->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=cairo;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                        </iframe><a href="https://www.fnfgo.com/">Friday Night Funkin Mods</a>
+                    </div>
+                    <style>
+                        .mapouter {
+                            position: relative;
+                            text-align: right;
+                            width: 600px;
+                            height: 400px;
+                        }
+
+                        .gmap_canvas {
+                            overflow: hidden;
+                            background: none !important;
+                            width: 550px;
+                            height: 400px;
+                        }
+
+                        .gmap_iframe {
+                            width: 550px !important;
+                            height: 400px !important;
+                        }
+                    </style>
+                </div>
+            </div>
+            <!-----------------ساهم بفكره------------>
+            <div class="col-md-6 text-light" style="padding-left:50px;margin-left:0px;">
+                <div class="text-right text-danger font-weight-bold" style="font-size:20px;">
+                    <img src="~/img/icons/icon.png" width="50" height="50" />
+                    ساهم بفكره
+                    <br />
+                    <br />
+                    <form asp-controller="" asp-action="">
+                        <input type="text" class="form-control-md" placeholder="...اكتب الاسم ثلاثى" />
+                        <input type="number" class="form-control-md" placeholder="......رقم التليفون" />
+                        <br />
+                        <br />
+
+                        <input type="email" class="form-control-range" placeholder="......اكتب الايميل" />
+                        <br />
+                        <textarea class="form-control-range" placeholder="......اكتب فكرتك"></textarea>
+                        <br />
+                        <button class="btn btn-primary form-control-range">ارسال</button>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-------------------------------------------------------------------->
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left text-uppercase">
+                    &copy; 2021 -جميع الحقوق محفوظه
+                </div>
+                <div class="col text-center">
+                    Developer By: <span>Mohanad</span>
+                </div>
+                <div class="col text-right">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/owl.carousel.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+
+    <script>
+        $(document).ready(function () {
+            // Activate Carousel
+            $("#myCarousel").carousel();
+
+            // Enable Carousel Indicators
+            $(".item1").click(function () {
+                $("#myCarousel").carousel(0);
+            });
+            $(".item2").click(function () {
+                $("#myCarousel").carousel(1);
+            });
+            $(".item3").click(function () {
+                $("#myCarousel").carousel(2);
+            });
+
+            // Enable Carousel Controls
+            $(".carousel-control-prev").click(function () {
+                $("#myCarousel").carousel("prev");
+            });
+            $(".carousel-control-next").click(function () {
+                $("#myCarousel").carousel("next");
+            });
+        });
+
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 1000,
+
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Gameyaty</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="~/font/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/bootstrap-icons.css" rel="stylesheet" />
+    <link href="~/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="~/css/owl.theme.default.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-------bar header-->
+    <div class="upper-bar">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col text-left">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+
+                    </ul>
+                    <div class="container">
+                        <button class="btn btn-info" asp-action="" asp-controller="" style="width:100px;">تطوع</button>
+                        <button class="btn btn-danger" asp-action="" asp-controller="" style="width:100px;">عضويه</button>
+                        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+                            التبرعات
+                        </button>
+                        <button class="btn btn-primary" asp-action="" asp-controller="" style="width:100px;">توظيف</button>
+                    </div>
+                </div>
+
+                <div class="col-text-right">
+
+                  
+                </div>
+
+
+            </div>
+
+
+        </div>
+    </div>
+    <!-------end-barheader-->
+    <!-------navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                @*<span>e</span> <span>fa</span>*@
+             
+            </a>
+            @*<h4 class="text-white-50" style="font-style:italic;color:#00ffff;">جمعية مصر للمستقبل</h4>*@
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fa fa-phone fa-fw"></i>اتصل بنا</a>
+                    </li>
+                   
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-cogs fa-fw"></i>الأنشطه</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fa fa-star-half-full"></i>الموردين</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link active dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-info-circle fa-fw"></i>من نحن</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Link 1</a>
+                            <a class="dropdown-item" href="#">Link 2</a>
+                            <a class="dropdown-item" href="#">Link 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color:gold;"><i class="fa fa-home fa-fw"></i>الرئيسيه</a>
+                    </li>
+                   
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item text-white-50">
+                        <a class="nav-link" aria-current="page" href="#"><i class="fa fa-sign-in fa-fw"></i>تسجيل دخول</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+    <!------- end navbar-->
+    
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col text-left text-uppercase">
+                    &copy; 2021 -جميع الحقوق محفوظه
+                </div>
+                <div class="col text-center">
+                    Developer By: <span>Mohanad</span>
+                </div>
+                <div class="col text-right">
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope-o"></i></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/popper.min.js"></script>
+    <script src="~/js/owl.carousel.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+
+    <script>
+        $(document).ready(function () {
+            // Activate Carousel
+            $("#myCarousel").carousel();
+
+            // Enable Carousel Indicators
+            $(".item1").click(function () {
+                $("#myCarousel").carousel(0);
+            });
+            $(".item2").click(function () {
+                $("#myCarousel").carousel(1);
+            });
+            $(".item3").click(function () {
+                $("#myCarousel").carousel(2);
+            });
+
+            // Enable Carousel Controls
+            $(".carousel-control-prev").click(function () {
+                $("#myCarousel").carousel("prev");
+            });
+            $(".carousel-control-next").click(function () {
+                $("#myCarousel").carousel("next");
+            });
+        });
+
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 1000,
+
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 3,
+                        nav: false
+                    },
+                    1000: {
+                        items: 5,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
